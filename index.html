@@ -1,0 +1,73 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a//dev/null b/index.html
+index 0000000000000000000000000000000000000000..72dbb6feae12e99074bf7e20518a32debc549be8 100644
+--- a//dev/null
++++ b/index.html
+@@ -0,0 +1,64 @@
++<!DOCTYPE html>
++<html lang="es">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>CoPsy</title>
++    <link rel="stylesheet" href="style.css">
++</head>
++<body>
++    <header>
++        <h1>CoPsy - Plataforma de Salud Mental</h1>
++        <nav id="main-nav">
++            <ul>
++                <li><a href="#" data-section="home">Inicio</a></li>
++                <li><a href="#" data-section="agenda">Agenda</a></li>
++                <li><a href="#" data-section="expediente">Expediente</a></li>
++                <li><a href="#" data-section="escalas">Escalas</a></li>
++                <li><a href="#" data-section="recetas">Recetas</a></li>
++                <li><a href="#" data-section="formularios">Formularios</a></li>
++                <li><a href="#" data-section="documentos">Documentos</a></li>
++                <li><a href="#" data-section="pagos">Pagos</a></li>
++            </ul>
++        </nav>
++    </header>
++
++    <main id="content">
++        <section id="home" class="active">
++            <h2>Bienvenido a CoPsy</h2>
++            <p>Esta es una versión inicial del front end para la plataforma de salud mental.</p>
++        </section>
++        <section id="agenda" class="hidden">
++            <h2>Agenda Electrónica</h2>
++            <p>Pantalla para gestionar citas y recordatorios.</p>
++        </section>
++        <section id="expediente" class="hidden">
++            <h2>Expediente Médico Electrónico</h2>
++            <p>Pantalla para visualizar y editar la información clínica del paciente.</p>
++        </section>
++        <section id="escalas" class="hidden">
++            <h2>Escalas Clinimétricas</h2>
++            <p>Conexión con el sistema de escalas automatizadas.</p>
++        </section>
++        <section id="recetas" class="hidden">
++            <h2>Recetas Digitales</h2>
++            <p>Generación y envío de recetas médicas.</p>
++        </section>
++        <section id="formularios" class="hidden">
++            <h2>Formularios Médicos</h2>
++            <p>Envío de formularios y obtención de consentimientos.</p>
++        </section>
++        <section id="documentos" class="hidden">
++            <h2>Documentos de Apoyo</h2>
++            <p>Material informativo y herramientas de terapia.</p>
++        </section>
++        <section id="pagos" class="hidden">
++            <h2>Sistema de Pagos</h2>
++            <p>Gestión de suscripciones y módulos.</p>
++        </section>
++    </main>
++
++    <script src="main.js"></script>
++</body>
++</html>
++
+ 
+EOF
+)
