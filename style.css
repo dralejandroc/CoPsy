@@ -1,0 +1,42 @@
+diff --git a//dev/null b/style.css
+index 0000000000000000000000000000000000000000..3863712600a8b84c282fc4615f2b4cee5c4e31dc 100644
+--- a//dev/null
++++ b/style.css
+@@ -0,0 +1,37 @@
++body {
++    font-family: Arial, sans-serif;
++    margin: 0;
++    padding: 0;
++    background-color: #f0f0f0;
++}
++
++header {
++    background-color: #333;
++    color: #fff;
++    padding: 10px;
++}
++
++nav ul {
++    list-style: none;
++    margin: 0;
++    padding: 0;
++    display: flex;
++    gap: 10px;
++}
++
++nav a {
++    color: #fff;
++    text-decoration: none;
++}
++
++section {
++    padding: 20px;
++}
++
++.hidden {
++    display: none;
++}
++
++.active {
++    display: block;
++}
