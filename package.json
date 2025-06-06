@@ -1,0 +1,18 @@
+diff --git a//dev/null b/package.json
+index 0000000000000000000000000000000000000000..3728cf23f58146c9f4982b05a8daf2261ac7c4d1 100644
+--- a//dev/null
++++ b/package.json
+@@ -0,0 +1,13 @@
++{
++  "name": "copsy",
++  "version": "1.0.0",
++  "description": "",
++  "main": "index.js",
++  "scripts": {
++    "test": "echo \"Error: no test specified\" && exit 1"
++  },
++  "keywords": [],
++  "author": "",
++  "license": "ISC",
++  "type": "commonjs"
++}
